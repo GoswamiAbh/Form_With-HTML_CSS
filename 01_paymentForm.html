@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+    <link rel="stylesheet" href="stylePayment.css">
+</head>
+<body>
+   <div class="container">
+    <form action="" method="get">
+
+        <h1 class="main">PAYMENT FORM</h1>
+        <fieldset>
+            <legend><h2>User Information</h2></legend>
+    
+            <div>
+                Name : <input type="text" required name="name" id="name" >
+                <br>
+                <br>
+               
+                <p>
+                    Gender:
+                    Male <input type="radio" name="Gender" id="male" required>
+                    FeMale <input type="radio" name="Gender" id="female" required>
+                </p>
+                <p>
+                    Address : <textarea name="address" id="address" cols="100" rows="8" required></textarea>
+                </p>
+                <p>
+                    Email : <input type="email" name="email" id="email" required>
+                </p>
+                <p>
+                    Pincode : <input type="number" name="pincode" id="pincode" required>
+                </p>
+            </div>
+        </fieldset>
+    
+        <fieldset>
+            <legend><h2>Payment Information</h2></legend>
+            <div>
+                Card Type :
+    
+                <select name="card_type" id="card_type" required>
+                    <option value="">--select a card--</option>
+                    <option value="visa">Debit Card</option>
+                    <option value="credit">Credit Card</option>
+                    <option value="upi">UPI</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                Card Number : <input type="number" name ="card_number" id="card_number" required>
+            </div>
+            <br>
+            <div>
+                Expiration Date : <input type="date" name="date" id="date" required>
+            </div>
+            <br>
+            <div>
+                CVV : <input type="password" name="cvv" id="cvv" required>
+    
+            </div>
+            <br>
+            <input type="submit" value="Pay Now">
+            <input type="reset" value="reset">
+        </fieldset>
+       </form>
+    
+   </div>
+</body>
+</html>
